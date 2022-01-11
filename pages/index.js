@@ -1,5 +1,9 @@
 import Container from "@mui/material/Container";
 import Hero from "@components/Hero";
+import SectionAbout from "@components/SectionAbout";
+import SectionImage from "@components/SectionImage";
+import SectionReview from "@components/SectionReview";
+
 
 const Homepage = () => {
   return (
@@ -11,7 +15,11 @@ const Homepage = () => {
         subtitle="Best Western &amp; Japanese Fusion Restaurant In Town"
       />
 
-      <Container maxWidth="sm">
+      <SectionAbout />
+      <SectionImage imgSrc="/fusion-food.jpg" imgAlt="fusion food" />
+      <SectionReview />
+
+      {/* <Container maxWidth="sm">
         <h1>Home Page</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sit
@@ -67,7 +75,7 @@ const Homepage = () => {
           Incidunt possimus optio officiis molestiae a magnam veritatis. A,
           tempora.
         </p>
-      </Container>
+      </Container> */}
     </>
   );
 };
